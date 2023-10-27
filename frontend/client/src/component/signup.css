@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+}
+
+.signup-content {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+ 
+  width: 100%;
+  
+  
+}
+
+.signup-form {
+    
+    display: flex;
+   flex-direction: row;;
+  flex: 1;
+  padding: 100px;
+  
+  
+
+}
+
+.signup-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-title {
+  font-size: 28px;
+  color: #333;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+label {
+  display: none;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#signup {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+
+.signup-image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:darkgrey;
+}
+
+figure {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding-left: 10px;
+}
+
+.alreadysignup {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.alreadysignup:hover {
+  text-decoration: underline;
+}
