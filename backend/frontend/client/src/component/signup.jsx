@@ -4,8 +4,12 @@ import { NavLink } from "react-router-dom";
 import Login from "./Login";
 import "./signup.css";
 import axios from "axios";
+import EmailIcon from "@mui/icons-material/Email";
+import PasswordIcon from "@mui/icons-material/Password";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
+  const navigate = useNavigate();
   const [name, setname] = useState();
   const [email, setemail] = useState();
 
@@ -21,6 +25,7 @@ const Signup = () => {
       })
       .then((result) => {
         console.log(result);
+        navigate("/login");
       })
       .catch((error) => console.log(error));
   };
@@ -30,9 +35,7 @@ const Signup = () => {
       <div className="container">
         <div className="signup-content">
           <div className="signup-form">
-            <div className="signup-heading">
-              <h1 className="form-title">Signup</h1>
-            </div>
+            <div className="signup-heading"></div>
             <form
               className="register-form"
               id="register-form"
@@ -53,7 +56,7 @@ const Signup = () => {
               </div>
               <div>
                 <label htmlFor="email" />
-                <PersonIcon />
+                <EmailIcon />
                 <input
                   type="text"
                   name="email"
@@ -67,7 +70,7 @@ const Signup = () => {
 
               <div>
                 <label htmlFor="password" />
-                <PersonIcon />
+                <PasswordIcon />
                 <input
                   type="text"
                   name="password"

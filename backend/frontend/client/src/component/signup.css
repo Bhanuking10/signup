@@ -9,7 +9,7 @@
 .signup-content {
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
   display: flex;
  
   width: 100%;
@@ -80,6 +80,7 @@ input {
   justify-content: center;
   align-items: center;
   background-color:darkgrey;
+  margin-left: 100px;
 }
 
 figure {
@@ -94,7 +95,7 @@ img {
 
 .alreadysignup {
   display: block;
-  color: #fff;
+  color:yellow;
   text-decoration: none;
   margin-top: 10px;
 }

@@ -2,9 +2,13 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const cors = require("cors");
+require("dotenv").config();
+
 const studentmodel = require("./models/student");
 app.use(cors());
 app.use(express.json());
+const port = process.env.PORT || 3001;
+
 mongoose.connect("mongodb://127.0.0.1:27017/student", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -19,7 +23,7 @@ app.post("/Login", (req, res) => {
         res.json("password incorrect");
       }
     } else {
-      res.json("user does not exit");
+      res.json("user does not exist");
     }
   });
 });
@@ -34,6 +38,6 @@ app.post("/register", (req, res) => {
     });
 });
 
-app.listen(3001, () => {
+app.listen(port, () => {
   console.log("app is running");
 });

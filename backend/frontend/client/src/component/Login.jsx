@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
+import "./login.css";
 
 const Login = () => {
   const [email, setemail] = useState();
@@ -15,7 +16,7 @@ const Login = () => {
         console.log(result);
         if (result.data === "Success") {
           console.log("login success");
-          navigate("/home"); // Redirect to "/home"
+          navigate("/home");
         }
       });
   };
@@ -31,6 +32,7 @@ const Login = () => {
         placeholder="enter your email"
         onChange={(e) => setemail(e.target.value)}
       />
+      <br />
       <label htmlFor="password" />
 
       <input
